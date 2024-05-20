@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.empresa.acctividad020.HelloController">
+    <children>
+        <GridPane>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <vgap>10</vgap>
+            <hgap>10</hgap>
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT"/>
+                <ColumnConstraints halignment="LEFT"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER"/>
+            </rowConstraints>
+
+            <Label text="Introduce el primer numero:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="num1Field" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Introduce el segundo numero:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="num2Field" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Button text="AND" fx:id="andButton" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Button text="OR" fx:id="orButton" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Button text="XOR" fx:id="xorButton" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+            <Button text="NOT" fx:id="notButton" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Button text="Shift Left" fx:id="shiftLeftButton" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <Button text="Shift Right" fx:id="shiftRightButton" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+            <Label text="Resultado:" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="3" fx:id="resultLabel"/>
+        </GridPane>
+    </children>
+</VBox>
